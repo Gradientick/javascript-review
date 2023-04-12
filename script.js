@@ -4,12 +4,11 @@ function Book(title, author, pages) {
     this.pages = pages;
     this.isRead = false;
     this.getInfo = function () {
-      return `${title} by ${author}, ${pages}, ${
-        this.isRead ? "already read" : "not read yet"
-      }`;
+        return `${title} by ${author}, ${pages}, ${
+            this.isRead ? "already read" : "not yet read"
+        }`;
     };
-  }
+} 
 
-const book1 = new Book('the hobbit', 'Luis', 5);
-
+const book1 = new Book("Life of Luis", "Luis Camus", "100");
 console.log(book1.getInfo());
